@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+}
+
+.landing-page {
+  text-align: center;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #6E2061;
+  z-index: 1000;
+  border-bottom: 5px solid white;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  margin-right: 100px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 80px; 
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-title {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 45px;
+}
+
+.hero-image {
+  width: 40%;
+  max-width: 400px;
+}
+
+.cta-section {
+  margin: 50px 0;
+}
+
+.cta-button {
+  background-color: #6E2061;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.features-section,
+.testimonials-section {
+  padding: 50px 20px;
+  background-color: #6E2061;
+}
+
+.features-section h2,
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.features-grid,
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-box,
+.testimonial-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+}
+
+.para {
+  color:#6E2061;
+  text-align: justify;
+}
+
+.footer {
+  background-color: #6E2061;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+.upcoming-prayer-section {
+  padding: 50px 100px;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+.upcoming-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-all-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6e1f61;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #8c2e82;
+}
+
+.prayer-meetings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.prayer-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prayer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.date-box {
+  background-color: #6e1f61;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+}
+
+.meeting-info h4 {
+  margin: 0;
+}
+
+.meeting-info p {
+  margin: 5px 0;
+}
+
+.feature-image {
+  width: 200px; 
+  height: 100px;
+  border-radius: 50%; 
+  margin-bottom: 10px; 
+}
+.testimonials-section {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #6e2061;
+  overflow: hidden;
+}
+
+.testimonials-graphic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.1; 
+  width: 100%; 
+  height: auto;
+}
+
+.testimonial-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.para {
+  color: #6e2061;
+  text-align: justify;
+}
+.promise-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.promise-container {
+  display: flex;
+  gap: 20px;
+}
+
+.promise-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.promise-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #6e2061;
+}
+
+.promise-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.promise-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.promise-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-button {
+  background-color: #6e2061;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-button:hover {
+  background-color: #6e2061;
+}
+
+.magazine-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.magazine-title {
+  font-size: 2.5rem;
+  color: #6e2061; 
+  margin-bottom: 30px;
+}
+
+.magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.magazine-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.magazine-cover {
+  width: 200px;
+  height: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.magazine-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.pdf-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.magazine-link:hover {
+  background-color: #ccc;
+}
